@@ -15,9 +15,10 @@
 
 #productos{
     display: grid;
-    grid-template-columns: 10% 45% 45%;
-    grid-template-rows: 20vh 80% 20vh;
+    grid-template-columns: 10% 40% 50%;
+    grid-template-rows: 20vh 13vh 70% 15vh;
     grid-template-areas:"logo              encabezado       encabezado"
+                        "subtitle          subtitle         subtitle"
                         "productos         productos        confiteria"
                         "pie_de_pagina     pie_de_pagina    pie_de_pagina";
 }
@@ -44,6 +45,11 @@
 .header{
     background-color: blanchedalmond;
     grid-area: encabezado;
+}
+
+.subtituloProductos{
+    background-color: beige;
+    grid-area: subtitle;
 }
 
 .logo{
@@ -155,42 +161,29 @@ footer{
 }
 
 
-#pantalla-dividida{
-    display: flex;
-}
+
 .subtitleSecciones{
     padding-top: 40px;
     padding-left: 40px;
     padding-bottom: 40px;
     text-transform: uppercase;
 }
-.subtitulosProductos{
-    display: flex;
-}
 .subtituloIzquierdaPanaderia{
-    padding-left: 413px;
-    padding-bottom: 70px;
-    padding-top: 70px;
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
 }
 .subtituloDerechaPanaderia{
-    padding-left: 826px;
-    padding-bottom: 70px;
-    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 108px;
     text-transform: uppercase;
 }
-.derechaProductos{
-    background: beige;
-    background-position: center;
-    width: 50%;
-    padding-left: 70px;
+.fotosProductos{
+    text-align: center;
+    padding-top: 50px;
 }
-.izquierdaProductos{
-    background: beige;
-    height: 100vh;
-    width: 50%;
-    padding-left: 70px;
-}
+
 
 
 .nosotrosTextoDerecha{
@@ -263,6 +256,7 @@ form{
     text-transform: uppercase;
     text-align: center;
 }
+
 
 
 .slider{
