@@ -15,11 +15,11 @@
 
 #productos{
     display: grid;
-    grid-template-columns: 13% 87%;
-    grid-template-rows: 20vh 90%;
-    grid-template-areas:"logo              encabezado"
-                        "productos         productos"
-                        "pie_de_pagina     pie_de_pagina";
+    grid-template-columns: 10% 45% 45%;
+    grid-template-rows: 20vh 80% 20vh;
+    grid-template-areas:"logo              encabezado       encabezado"
+                        "productos         productos        confiteria"
+                        "pie_de_pagina     pie_de_pagina    pie_de_pagina";
 }
 
 #nosotros{
@@ -54,6 +54,10 @@
 .productos{
     background-color: beige;
     grid-area: productos;
+}
+.confiteria{
+    background-color: beige;
+    grid-area: confiteria;
 }
 
 footer{
