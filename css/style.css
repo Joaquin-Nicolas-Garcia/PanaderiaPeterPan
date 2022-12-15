@@ -16,7 +16,7 @@
 #productos{
     display: grid;
     grid-template-columns: 10% 40% 50%;
-    grid-template-rows: auto 7% auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:"encabezado        encabezado       encabezado"
                         "subtitle          subtitle         subtitle"
                         "productos         productos        confiteria"
@@ -26,7 +26,7 @@
 #locales{
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: auto 80% auto;
+    grid-template-rows: 20% 83% auto;
     grid-template-areas:"encabezado        encabezado       encabezado"
                         "productos         productos        productos"
                         "pie_de_pagina     pie_de_pagina    pie_de_pagina";
@@ -35,7 +35,7 @@
 #nosotros{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
+    grid-template-rows: 20% 75% auto;
     grid-template-areas:"encabezado        encabezado"
                         "productos         productos"
                         "pie_de_pagina     pie_de_pagina";
@@ -44,7 +44,7 @@
 #contactanos{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto 70vh;
+    grid-template-rows: auto 80% auto;
     grid-template-areas:"encabezado        encabezado"
                         "productos         productos"
                         "pie_de_pagina     pie_de_pagina";
@@ -102,8 +102,8 @@ a{
 }
 nav a{
     font-weight: 900;
-    margin-right: 30px;
-    padding-right: 40px;
+    font-size: large;
+    margin-right: 80px;
     padding: 5px 10px;
 }
 nav a:hover{
@@ -118,13 +118,16 @@ nav a:hover{
     }
 }
 
+
 ul{
     list-style: none;
 }
 
+
 body{
     font-family: 'Roboto', sans-serif;;
 }
+
 
 footer{
     padding-left: 35px;
@@ -136,6 +139,7 @@ footer{
     display: flex;
 }
 .textoFooter{
+    font-size: medium;
     width: 50%;
     margin-top: 23px;
     text-transform: uppercase;
@@ -149,6 +153,7 @@ footer{
     margin-right: 20px;
 }
 
+
 .tituloIndex{
     text-align: center;
     padding-top: 70px;
@@ -161,6 +166,7 @@ footer{
     padding-bottom: 30px;
     text-transform: uppercase;
 }
+
 
 
 .fotoPortada{
@@ -203,16 +209,17 @@ footer{
 
 
 
-.nosotrosTextoDerecha{
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 10px;
+.imagenNosotros{
+    padding-bottom: 15px;
 }
-.nosotrosPadding{
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
+.imagenNosotros img{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    border-radius: 7px;
+}
+.textoNosotros{
+    padding-top: 7%;
 }
 
 
@@ -220,7 +227,12 @@ footer{
 .txtLocales{
     text-align: center;
     padding-top: 100px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.paddingLocales{
+    padding-top: 60px;
 }
 
 
@@ -256,7 +268,7 @@ form{
 }
 .textoContactanos{
     padding-left: 30px;
-    padding-top: 50px;
+    padding-top: 90px;
     padding-right: 30px;
     text-transform: uppercase;
     text-align: center;
