@@ -19,7 +19,7 @@
     grid-template-rows: auto auto auto auto;
     grid-template-areas:"encabezado        encabezado       encabezado"
                         "subtitle          subtitle         subtitle"
-                        "productos         productos        confiteria"
+                        "productos         productos        productos"
                         "pie_de_pagina     pie_de_pagina    pie_de_pagina";
 }
 
@@ -101,16 +101,26 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    padding-right: 100px;
+    padding-right: 90px;
 }
 .gap{
-    gap: 10px;
+    gap: 8px;
 }
 h2{
     color: rgba(0, 0, 0, 0.897);
 }
 h5{
     color: black;
+}
+@media screen and (max-width:1089px){
+    .logoIndex{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:330px){
+    .logoIndex img{
+        padding-right: 50px;
+    }
 }
 
 
@@ -215,11 +225,25 @@ footer{
 }
 .fotosProductos img{
     border-radius: 15px;
-    width: 40%;
+    width: 360px;
+}
+.fotosProductos img:hover{
+    opacity: 0.7;
+}
+@media screen and (max-width:1124px){
+    .fotosProductos img{
+        width: 280px;
+    }
 }
 @media screen and (max-width:660px){
+    .subtitleSecciones{
+        font-size: 27px;
+    }
     .subtituloIzquierdaPanaderia{
         font-size: 23px;
+    }
+    .fotosProductos img{
+        width: 150px;
     }
 }
 
