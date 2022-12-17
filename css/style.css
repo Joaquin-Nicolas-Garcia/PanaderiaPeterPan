@@ -62,33 +62,22 @@
 
 
 .header{
-    background-color: blanchedalmond;
+    background-color: rgb(247, 222, 186);
     grid-area: encabezado;
 }
-
 .subtituloProductos{
-    background-color: beige;
+    background-color: blanchedalmond;
     grid-area: subtitle;
 }
-
-.logo{
-    background-color:blanchedalmond;
-    grid-area: logo;
-}
-
 .productos{
-    background-color: beige;
+    background-color: blanchedalmond;
     grid-area: productos;
 }
-.confiteria{
-    background-color: beige;
-    grid-area: confiteria;
-}
-
 footer{
-    background-color: blanchedalmond;
+    background-color: rgb(247, 222, 186);
     grid-area: pie_de_pagina;
 }
+
 
 
 .logoIndex{
@@ -253,13 +242,21 @@ footer{
     padding-bottom: 15px;
 }
 .imagenNosotros img{
-    display: flex;
     height: 100%;
     width: 80%;
     border-radius: 7px;
 }
 .textoNosotros{
     padding-top: 7%;
+}
+@media screen and (max-width:991px){
+    .textoNosotros{
+        padding-top: 2%;
+    }
+    .imagenNosotros img{
+        width: 100%;
+        
+    }
 }
 
 
@@ -280,7 +277,7 @@ footer{
 form{
     width: 590px;
     margin: auto;
-    background: rgb(255, 235, 205);
+    background: rgb(247, 222, 186);
     border-radius: 15px;
     margin-top: 50px;
     border-radius: 15px;
