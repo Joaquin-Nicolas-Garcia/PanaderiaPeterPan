@@ -272,7 +272,9 @@ footer{
     padding-top: 60px;
 }
 
-
+.colorPagina{
+    background-color: rgb(247, 222, 186);
+}
 
 form{
     width: 590px;
