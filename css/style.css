@@ -203,11 +203,15 @@ footer{
     padding-left: 40px;
     padding-bottom: 40px;
     text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 2px 2px rgb(248, 196, 117);
 }
 .subtituloIzquierdaPanaderia{
     display: flex;
     justify-content: center;
     text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 2px 2px rgb(248, 196, 117);
 }
 .fotosProductos{
     display: flex;
@@ -215,18 +219,25 @@ footer{
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    gap: 10px;
+    gap: 13px;
+    width: 100%;
 }
 .fotosProductos img{
     border-radius: 15px;
-    width: 360px;
+    width: 350px;
+    height: 320px;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    opacity: 0.97;
 }
 .fotosProductos img:hover{
-    opacity: 0.7;
+    opacity: 1;
+    transform: scale(1.03);
 }
 @media screen and (max-width:1124px){
     .fotosProductos img{
         width: 280px;
+        height: 230px;
     }
 }
 @media screen and (max-width:660px){
@@ -252,7 +263,7 @@ footer{
     border-radius: 7px;
 }
 .textoNosotros{
-    padding-top: 7%;
+    padding-top: 3%;
 }
 @media screen and (max-width:991px){
     .textoNosotros{
