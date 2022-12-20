@@ -309,7 +309,7 @@ form{
 }
 #boton{
     background: gray;
-    color: white;
+    color: black;
     padding: 10px;
 }
 #boton:hover{
@@ -328,9 +328,11 @@ form{
 }
 input, textarea{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 7px;
     font-size: 15px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
 }
 textarea{
     min-height: 100px;
