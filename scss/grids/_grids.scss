@@ -1,0 +1,72 @@
+#index{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:"encabezado        encabezado"
+                        "productos         productos"
+                        "pie_de_pagina     pie_de_pagina";
+}
+
+#productos{
+    display: grid;
+    grid-template-columns: 10% 40% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:"encabezado        encabezado       encabezado"
+                        "subtitle          subtitle         subtitle"
+                        "productos         productos        productos"
+                        "pie_de_pagina     pie_de_pagina    pie_de_pagina";
+}
+
+#locales{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto 83% auto;
+    grid-template-areas:"encabezado        encabezado       encabezado"
+                        "productos         productos        productos"
+                        "pie_de_pagina     pie_de_pagina    pie_de_pagina";
+}
+@media screen and (max-width:992px){
+    #locales{
+        grid-template-rows: auto auto auto;
+    }
+}
+
+#nosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 77% auto;
+    grid-template-areas:"encabezado        encabezado"
+                        "productos         productos"
+                        "pie_de_pagina     pie_de_pagina";
+}
+@media screen and (max-width:992px){
+    #nosotros{
+        grid-template-rows: auto auto auto;
+    }
+}
+
+#contactanos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:"encabezado        encabezado"
+                        "productos         productos"
+                        "pie_de_pagina     pie_de_pagina";
+}
+
+.header{
+    background-color: rgb(247, 222, 186);
+    grid-area: encabezado;
+}
+.subtituloProductos{
+    background-color: blanchedalmond;
+    grid-area: subtitle;
+}
+.productos{
+    background-color: blanchedalmond;
+    grid-area: productos;
+}
+footer{
+    background-color: rgb(247, 222, 186);
+    grid-area: pie_de_pagina;
+}

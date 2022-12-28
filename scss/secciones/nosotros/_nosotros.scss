@@ -1,0 +1,21 @@
+.imagenNosotros{
+    padding-bottom: 15px;
+
+    & img{
+        height: 100%;
+        width: 80%;
+        border-radius: 7px;
+    }
+}
+.textoNosotros{
+    padding-top: 3%;
+}
+@media screen and (max-width:991px){
+    .textoNosotros{
+        padding-top: 2%;
+    }
+    .imagenNosotros img{
+        width: 100%;
+        
+    }
+}

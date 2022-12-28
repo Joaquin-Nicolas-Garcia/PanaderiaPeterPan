@@ -1,0 +1,33 @@
+.logoIndex {
+    font-size: 25px;
+    margin: 0;
+
+    & img {
+        display: flex;
+        height: 150px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 90px;
+    }
+}
+
+.colorDesplegable {
+    background-color: rgb(247, 222, 186);
+}
+
+@media screen and (max-width:1089px) {
+    .logoIndex {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .logoIndex img {
+        padding-right: 50px;
+    }
+}
+
+.gap {
+    gap: 8px;
+}
