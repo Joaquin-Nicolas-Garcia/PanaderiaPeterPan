@@ -1,0 +1,16 @@
+$colores-de-la-pagina: (
+    principal: rgb(247, 222, 186),
+    secundario: blanchedalmond,
+    sombraTextos: rgb(250, 191, 102)
+);
+
+
+@mixin padding ($ptop, $pleft, $pright){
+    padding-top: $ptop;
+    padding-left: $pleft;
+    padding-right: $pright;
+}
+
+
+$color-boton-form: black;
+$color-bg-form: grey;

@@ -25,11 +25,7 @@
                         "productos         productos        productos"
                         "pie_de_pagina     pie_de_pagina    pie_de_pagina";
 }
-@media screen and (max-width:992px){
-    #locales{
-        grid-template-rows: auto auto auto;
-    }
-}
+
 
 #nosotros{
     display: grid;
@@ -38,11 +34,6 @@
     grid-template-areas:"encabezado        encabezado"
                         "productos         productos"
                         "pie_de_pagina     pie_de_pagina";
-}
-@media screen and (max-width:992px){
-    #nosotros{
-        grid-template-rows: auto auto auto;
-    }
 }
 
 #contactanos{
@@ -55,18 +46,18 @@
 }
 
 .header{
-    background-color: rgb(247, 222, 186);
+    background-color: map-get($colores_de_la_pagina, principal);
     grid-area: encabezado;
 }
 .subtituloProductos{
-    background-color: blanchedalmond;
+    background-color: map-get($colores_de_la_pagina, secundario);
     grid-area: subtitle;
 }
 .productos{
-    background-color: blanchedalmond;
+    background-color: map-get($colores_de_la_pagina, secundario);
     grid-area: productos;
 }
 footer{
-    background-color: rgb(247, 222, 186);
+    background-color: map-get($colores_de_la_pagina, principal);
     grid-area: pie_de_pagina;
 }

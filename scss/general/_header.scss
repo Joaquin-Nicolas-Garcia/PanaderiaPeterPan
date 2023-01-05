@@ -13,19 +13,7 @@
 }
 
 .colorDesplegable {
-    background-color: rgb(247, 222, 186);
-}
-
-@media screen and (max-width:1089px) {
-    .logoIndex {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:330px) {
-    .logoIndex img {
-        padding-right: 50px;
-    }
+    background-color: map-get($colores_de_la_pagina, principal);
 }
 
 .gap {

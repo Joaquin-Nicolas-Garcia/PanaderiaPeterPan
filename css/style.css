@@ -21,19 +21,11 @@
   grid-template-rows: auto 83% auto;
   grid-template-areas: "encabezado        encabezado       encabezado" "productos         productos        productos" "pie_de_pagina     pie_de_pagina    pie_de_pagina"; }
 
-@media screen and (max-width: 992px) {
-  #locales {
-    grid-template-rows: auto auto auto; } }
-
 #nosotros {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto 77% auto;
   grid-template-areas: "encabezado        encabezado" "productos         productos" "pie_de_pagina     pie_de_pagina"; }
-
-@media screen and (max-width: 992px) {
-  #nosotros {
-    grid-template-rows: auto auto auto; } }
 
 #contactanos {
   display: grid;
@@ -71,14 +63,6 @@ footer {
 .colorDesplegable {
   background-color: #f7deba; }
 
-@media screen and (max-width: 1089px) {
-  .logoIndex {
-    font-size: 20px; } }
-
-@media screen and (max-width: 330px) {
-  .logoIndex img {
-    padding-right: 50px; } }
-
 .gap {
   gap: 8px; }
 
@@ -108,12 +92,6 @@ footer {
   .logoFooter img {
     height: 100%; }
 
-@media (max-width: 600px) {
-  .logoFooter img {
-    height: 80%; }
-  .textoFooter {
-    font-size: smaller; } }
-
 h1, h2, h3, h4, h5 {
   color: rgba(0, 0, 0, 0.897); }
 
@@ -129,13 +107,13 @@ body {
   padding-bottom: 40px;
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
-  text-shadow: 2px 2px #f8c475; }
+  text-shadow: 2px 2px #fabf66; }
 
 .tituloIndex {
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
   text-transform: uppercase;
-  text-shadow: 2px 2px #f8c475;
+  text-shadow: 2px 2px #fabf66;
   padding-top: 60px;
   padding-bottom: 30px;
   font-size: 1900px; }
@@ -187,16 +165,12 @@ body {
   100% {
     margin-left: -300%; } }
 
-@media (max-width: 920px) {
-  .slider {
-    width: 90%; } }
-
 .subtituloPanaderia {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
-  text-shadow: 2px 2px #f8c475; }
+  text-shadow: 2px 2px #fabf66; }
 
 .fotosProductos {
   display: flex;
@@ -217,19 +191,6 @@ body {
     opacity: 1;
     transform: scale(1.03); }
 
-@media screen and (max-width: 1124px) {
-  .fotosProductos img {
-    width: 280px;
-    height: 230px; } }
-
-@media screen and (max-width: 660px) {
-  .subtitleSecciones {
-    font-size: 27px; }
-  .subtituloIzquierdaPanaderia {
-    font-size: 23px; }
-  .fotosProductos img {
-    width: 150px; } }
-
 .imagenNosotros {
   padding-bottom: 15px; }
   .imagenNosotros img {
@@ -240,21 +201,19 @@ body {
 .textoNosotros {
   padding-top: 3%; }
 
-@media screen and (max-width: 991px) {
-  .textoNosotros {
-    padding-top: 2%; }
-  .imagenNosotros img {
-    width: 100%; } }
-
 .txtLocales {
   text-align: center;
+  text-transform: uppercase; }
+
+.txtLocales {
   padding-top: 100px;
-  text-transform: uppercase;
   padding-left: 50px;
   padding-right: 50px; }
 
 .paddingLocales {
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-left: 0px;
+  padding-right: 0px; }
 
 form {
   width: 590px;
@@ -272,7 +231,7 @@ form {
   padding-bottom: 10px; }
 
 #boton {
-  background: gray;
+  background: grey;
   color: black;
   padding: 10px; }
   #boton:hover {
@@ -303,6 +262,49 @@ textarea {
   max-width: 100%;
   min-width: 100%; }
 
-@media (max-width: 590px) {
+@media screen and (max-width: 1124px) {
+  .fotosProductos img {
+    width: 280px;
+    height: 230px; } }
+
+@media screen and (max-width: 1089px) {
+  .logoIndex {
+    font-size: 20px; } }
+
+@media screen and (max-width: 992px) {
+  #locales {
+    grid-template-rows: auto auto auto; }
+  #nosotros {
+    grid-template-rows: auto auto auto; }
+  .textoNosotros {
+    padding-top: 2%; }
+  .imagenNosotros img {
+    width: 100%; }
+  .gap {
+    gap: 2px; } }
+
+@media (max-width: 950px) {
+  .slider {
+    width: 90%; } }
+
+@media screen and (max-width: 660px) {
+  .subtitleSecciones {
+    font-size: 27px; }
+  .subtituloIzquierdaPanaderia {
+    font-size: 23px; }
+  .fotosProductos img {
+    width: 150px; } }
+
+@media (max-width: 600px) {
+  .logoFooter img {
+    height: 80%; }
+  .textoFooter {
+    font-size: smaller; } }
+
+@media screen and (max-width: 590px) {
   form {
     width: 100%; } }
+
+@media screen and (max-width: 330px) {
+  .logoIndex img {
+    padding-right: 50px; } }

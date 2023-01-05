@@ -13,5 +13,5 @@ body{
     padding-bottom: 40px;
     text-transform: uppercase;
     font-family: 'Ubuntu', sans-serif;
-    text-shadow: 2px 2px rgb(248, 196, 117);
+    text-shadow: 2px 2px map-get($colores-de-la-pagina, sombraTextos)
 }

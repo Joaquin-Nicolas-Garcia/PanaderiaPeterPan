@@ -1,0 +1,77 @@
+@media screen and (max-width:1124px){
+    .fotosProductos img{
+        width: 280px;
+        height: 230px;
+    }
+}
+
+
+@media screen and (max-width:1089px) {
+    .logoIndex {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:992px){
+    #locales{
+        grid-template-rows: auto auto auto;
+    }
+    #nosotros{
+        grid-template-rows: auto auto auto;
+    }
+    .textoNosotros{
+        padding-top: 2%;
+    }
+    .imagenNosotros img{
+        width: 100%;
+        
+    }
+    .gap {
+        gap: 2px;
+    }
+}
+
+
+@media (max-width:950px){
+    .slider{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width:660px){
+    .subtitleSecciones{
+        font-size: 27px;
+    }
+    .subtituloIzquierdaPanaderia{
+        font-size: 23px;
+    }
+    .fotosProductos img{
+        width: 150px;
+    }
+}
+
+
+@media (max-width:600px){
+    .logoFooter img{
+        height: 80%;
+    }
+    .textoFooter{
+        font-size: smaller;
+    }
+}
+
+
+@media screen and (max-width:590px){
+    form{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:330px) {
+    .logoIndex img {
+        padding-right: 50px;
+    }
+}

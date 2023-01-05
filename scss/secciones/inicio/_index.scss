@@ -2,7 +2,7 @@
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
-    text-shadow: 2px 2px rgb(248, 196, 117);
+    text-shadow: 2px 2px map-get($colores_de_la_pagina, sombraTextos );
     padding-top: 60px;
     padding-bottom: 30px;
     font-size: 1900px;
@@ -12,7 +12,7 @@
     text-align: center;
     padding-top: 40px;
     padding-bottom: 60px;
-    text-shadow: 1px 1px rgb(250, 191, 102);
+    text-shadow: 1px 1px map-get($colores_de_la_pagina, sombraTextos );
     text-transform: uppercase;
 }
 

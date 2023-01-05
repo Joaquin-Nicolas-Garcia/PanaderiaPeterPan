@@ -1,4 +1,5 @@
 @import "./reset/reset.scss";
+@import "./general/variables";
 @import "./grids/grids.scss";
 @import "./general/header.scss";
 @import "./general/footer.scss";
@@ -9,3 +10,4 @@
 @import "./secciones/nosotros/nosotros";
 @import "./secciones/locales/locales";
 @import "./secciones/contacto/formulario";
+@import "./general/media-queries";

@@ -3,7 +3,7 @@
     justify-content: center;
     text-transform: uppercase;
     font-family: 'Ubuntu', sans-serif;
-    text-shadow: 2px 2px rgb(248, 196, 117);
+    text-shadow: 2px 2px map-get($colores_de_la_pagina, sombraTextos );
 }
 .fotosProductos{
     display: flex;
@@ -26,22 +26,5 @@
     & img:hover{
         opacity: 1;
         transform: scale(1.03);
-    }
-}
-@media screen and (max-width:1124px){
-    .fotosProductos img{
-        width: 280px;
-        height: 230px;
-    }
-}
-@media screen and (max-width:660px){
-    .subtitleSecciones{
-        font-size: 27px;
-    }
-    .subtituloIzquierdaPanaderia{
-        font-size: 23px;
-    }
-    .fotosProductos img{
-        width: 150px;
     }
 }
